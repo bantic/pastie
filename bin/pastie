@@ -9,5 +9,5 @@ if body.size <= 15
 else
   url = Pastie.create(body, options)
   `echo #{url} | pbcopy`
-  puts url
+  puts "Your pastie url is: #{url}. It has been copied to your clipboard."
 end
