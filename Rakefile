@@ -5,13 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "pastie"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Command-line interface to pastie}
+    gem.description = %Q{Create a new pastie: $ pastie -- reads from clipboard and replaces clipboard with url}
     gem.email = "cory.forsyth@gmail.com"
     gem.homepage = "http://github.com/bantic/pastie"
     gem.authors = ["Cory"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

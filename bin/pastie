@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
+require 'pastie'
+options = ARGV[0] == "-a" ? {} : {:private => true}
+body = `pbpaste`
+if body.size <= 15
+  puts "You don't seem to have much in your clipboard. Try again."
+else
+  url = Pastie.create(body, options)
+  `echo #{url} | pbcopy`
+  puts url
+end
