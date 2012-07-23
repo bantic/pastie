@@ -1,3 +1,7 @@
+== Name change
+  As of July 23, 2012, this gem's name has been changed to 'bantic-pastie' so that
+  the pastie.org organization can have the unqualified namespace for their own purposes.
+
 = pastie
 
      $ gem install pastie
